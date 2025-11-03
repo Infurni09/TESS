@@ -1,0 +1,6 @@
+*{box-sizing:border-box;font-family:Inter, Arial, sans-serif}
+body{margin:0;background:#f5f7fb;color:#111}
+.topbar{background:#0b2545;color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.card{background:#fff;padding:18px;border-radius:10px;margin:16px}
+.content{padding:24px}
+.choice{padding:8px;margin:6px 0;border-radius:6px;background:#eef}
