@@ -22,7 +22,6 @@ def start(user_id: int, event_id: str, mode: str = 'diagnostic', which: int = 1)
 
 @router.post('/submit/{session_id}')
 def submit(session_id: int, user_id: int, event_id: str, question_id: int, selected: str):
-    # find question in event files
     p = os.path.join(DATA_DIR, event_id)
     found = None
     for fname in ['diagnostic1.json','diagnostic2.json','diagnostic3.json','practice_bank.json']:
