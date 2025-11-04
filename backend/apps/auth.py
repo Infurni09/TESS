@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 pwd = CryptContext(schemes=['bcrypt'], deprecated='auto')
 SECRET_KEY = os.getenv('SECRET_KEY', 'change-me')
 ALGORITHM = 'HS256'
-ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES', 10080))
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES', 60*24*7))
 
 def hash_pw(password: str) -> str:
     return pwd.hash(password)
